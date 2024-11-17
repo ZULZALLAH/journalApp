@@ -21,6 +21,7 @@ import static org.mockito.Mockito.when;
 //@SpringBootTest //If we not used this annotation then we get NullPointerException because bean are not crete in spring Application Context/IOContainer  we get null for all @Autowired - service,repositry,etc
 // If we used then we easily interact this all service,repository method to do process
 // But their is also one approach without using this @SpringBootTest used this @InjectMocks in all service,repository to perform process to overcome from NULlExcept
+@SpringBootTest
 public class UserDetailsServiceImplTests {
     //Note very impoertant--- we can perform from Both condition Mock vs MockBean
 
